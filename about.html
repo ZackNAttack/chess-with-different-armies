@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/about.css" />
+		<title>About</title>
+	</head>
+	<body>
+		<main>
+			<h1>Chess With Many Different Armies</h1>
+			<p>It's Chess, but with a variety of different starting armies. Both players get to choose which army to start with. Proceeds with standard chess rules, but with possible fairy pieces, depending on the army.</p>
+			<p>Probably will not have AI.</p>
+			<p>Genre: Board Game</p>
+			<p>Platform: Ideally both desktop and mobile web.</p>
+			<p>There is no story, the gameplay is mostly based on standard chess.</p>
+			<p>Aesthetics: Simplistic piece forms, both because I like that appearance.. and that I'm a poor artist.</p>
+			<p>Mockups:</p>
+			<img src="images/mockup.png" alt="The army selection screen. Shows the 4 pieces the army has, as well as the ability to see how they move via an example position."</img>
+			<br /><img src="images/mockup2.png" alt="The board. Two boards are shown. The left is White's perspective, the right is Black's perspective. It is currently White's turn and they are seeing what spaces their Knight can move to. The Knight is highlighed in blue, the movable spaces are green, the occupied movable spaces are outlined in green."</img>
+			<p>Other: I'll be using this with just JS &amp; Browser DOM. I might end up completely changing up what this is after I finish generic piece and display code...</p>
+			<p>Isaac Dunlap, GDD sophomore, programmer,<h2> avid CaveStory fan, likes the taste of coffee but unaffected by caffine, loves eating baked potatos plain, favorite food is red velvet muffins, this joke's gone too far</h2></p>
+			<hr />
+			<p>Going to use game-of-life as a basis to make chess based on</p>
+			<p>Probably going to move the javascript to an external file at about the time I make the chess piece class</p>
+			<hr />
+			<p>ok yeah i did that</p>
+			<p>stuff planned as of critique day:<p>
+			<ul>
+				<li>Add En Passant</li>
+				<li>Add Castling</li>
+				<li>Add Promotions</li>
+				<li>Add Check and Checkmate</li>
+			</ul>
+			<p>feedback from critique day:</p>
+			<ul>
+				<li>Add something that shows what pieces have been taken<br />Center the application</li>
+				<li>Add ability to undo<br />Chess timer?</li>
+				<li>Make board scale with screen?</li>
+			</ul>
+			<hr />
+			<p>finished en passant and castling; promotions are only finished as far as promotions to queen.</p>
+			<hr />
+			<p>finished check and mate; once i get promotions done i'll work on the critique day feedback, then add the "different armies" part</p>
+			<p>ok i haven't written time and stuff in other entries but it's almost midnight right now i really should sleep</p>
+			<hr />
+			<p>promotions are done (kinda, a feature is missing but it's part of the critique day stuff), critique feature time!</p>
+			<p>first up: show taken pieces.</p>
+			<hr />
+			<p>taken pieces are now shown, they can be chosen as promotion targets</p>
+			<p>a mate detect bug was removed</p>
+			<hr />
+			<p>application positioning and size etc. is now entirely dependent on viewport width; it's now centered and scales.</p>
+			<p>undo ability and chess timer added. if there's a timer, undo becomes pause.</p>
+			<hr />
+			<p>other armies now added. i think i've added everything i wanted to, as well as all critique stuff!</p>
+			<hr />
+			<p>functional reqirements: the ECMAScript and the DOM is the underlying engine (my goal (i've not actually tested this yet) is that this be playable even on something like the 3ds)</p>
+			<p>chess is useful, i think.</p>
+			<p>in my (honestly not-too-extensive) testing, it appears not to throw any errors.</p>
+			<p>design and interaction: i hope the graphics are pleasing!</p>
+			<p>the only un-labeled widget, i believe, would be the timer. i think its coloration and function should make it clear enough, though.</p>
+			<p>the only part that would likely need instruction would be the chess timer. user errors are displayed on the other ticker (as well as other status messages, such as promotion).</p>
+			<p>it scales entirely based on viewport width (except for the text on the New Game and Pause/Undo button).</p>
+			<p>media: all images are .pngs; there is a "pdn" file but that's never displayed, it's just for internal usage.</p>
+			<p>honestly, this was a bit last-minute, adding the chess move sound.</p>
+			<p>the fonts Orbitron (in the timer) and Arvo (everywhere else) are used.</p>
+			<p>html/css: it passes both validators</p>
+			<p>all css is external</p>
+			<p>iffy on this one, as it isn't exactly easy to structure an applet like this semantically.</p>
+			<p>code conventions: all the pieces' logic are in static classes, TheBoard is a pseudo-class</p>
+			<p>var goes completely unused, and all scripts are prefixed with "use strict";</p>
+			<p>the older methods are unused.</p>
+			<p>i don't think i've repeated myself to any notable degree.</p>
+			<p>javascript: all are external; each piece has its own js file, TheBoard is in its own js file, the main code is in main.js</p>
+			<p>variables and functions begin with lowercase. constants and classes begin with uppercase. that's conventional, right?</p>
+			<p>i hope my code is commented to a proper level. i'm never certain how much is proper or at what point it's over-commented.</p>
+			<p>console.log calls are commented out (though they only happen during errors)</p>
+		</main>
+	</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Chess with Different Armies</title>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Orbitron">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo">
+		<link href="css/style.css" rel="stylesheet" />
+		<script src="js/board.js"></script>
+		<script src="js/piece.js"></script>
+		<script src="js/pawn.js"></script>
+		<script src="js/rook.js"></script>
+		<script src="js/knight.js"></script>
+		<script src="js/bishop.js"></script>
+		<script src="js/queen.js"></script>
+		<script src="js/king.js"></script>
+		<script src="js/bede.js"></script>
+		<script src="js/waffle.js"></script>
+		<script src="js/fad.js"></script>
+		<script src="js/cardinal.js"></script>
+		<script src="js/chargingRook.js"></script>
+		<script src="js/fibnif.js"></script>
+		<script src="js/chargingKnight.js"></script>
+		<script src="js/colonel.js"></script>
+		<script src="js/shortRook.js"></script>
+		<script src="js/woodyRook.js"></script>
+		<script src="js/halfDuck.js"></script>
+		<script src="js/chancellor.js"></script>
+	</head>
+	<body>
+		<main>
+			<div id="takenContainer"></div>
+			<div id="gridContainer"></div>
+			<div id="gridContainer2"></div>
+			<div id="takenContainer2"></div>
+			<p id="ticker"></p>
+			<p id="ticker2"></p>
+			<button type="button" id="paundo">Undo</button>
+			<div id="chessCounterWhiteContainer">
+				<div class="MinutCont"><p class="chessCounter">00</p></div>
+				<div class="ColonCont"><p class="chessCounter">:</p></div>
+				<div class="SeconCont"><p class="chessCounter">00</p></div>
+				<div class="CeSecCont"><p class="chessCounter">00</p></div>
+			</div>
+			<div id="chessCounterBlackContainer">
+				<div class="MinutCont"><p class="chessCounter">00</p></div>
+				<div class="ColonCont"><p class="chessCounter">:</p></div>
+				<div class="SeconCont"><p class="chessCounter">00</p></div>
+				<div class="CeSecCont"><p class="chessCounter">00</p></div>
+			</div>
+			<button type="button" id="newgame">New Game</button>
+			<div id="setupContainer">
+				<div id="selectionPanel">
+					<p>White, select an army:</p>
+					<div id="armyPanel">
+						<ul id="armyList">
+						</ul>
+					</div>
+				</div>
+				<div id="pieceCollection">
+					<div id="rookSection">
+						<div id="rookDisplay" class="pieceDisplay">
+							<img src="images/Rook-White.png" alt="White Rook"/>
+							<p>Rook</p>
+						</div>
+						<button type="button" id="rookButton" class="pieceButton">See Moves</button>
+					</div>
+					<div id="knightSection">
+						<div id="knightDisplay" class="pieceDisplay">
+							<img src="images/Knight-White.png" alt="White Knight"/>
+							<p>Knight</p>
+						</div>
+						<button type="button" id="knightButton" class="pieceButton">See Moves</button>
+					</div>
+					<div id="bishopSection">
+						<div id="bishopDisplay" class="pieceDisplay">
+							<img src="images/Bishop-White.png" alt="White Bishop"/>
+							<p>Bishop</p>
+						</div>
+						<button type="button" id="bishopButton" class="pieceButton">See Moves</button>
+					</div>
+					<div id="queenSection">
+						<div id="queenDisplay" class="pieceDisplay">
+							<img src="images/Queen-White.png" alt="White Queen"/>
+							<p>Queen</p>
+						</div>
+						<button type="button" id="queenButton" class="pieceButton">See Moves</button>
+					</div>
+					<button type="button" id="confirmButton">Confirm</button>
+				</div>
+			</div>
+			<div id="timerPanel">
+				<p>Chess timer settings:<br /><input type="number" id="initialTime" value="0" />|<input type="number" id="bonusTime" value="0" /></p>
+			</div>
+		</main>
+		
+		<audio hidden id="move" preload="auto">
+			<source src="audio/move.ogg" type="audio/ogg" />
+			<source src="audio/move.wav" type="audio/wav" />
+		</audio>
+		<script src="js/main.js"></script>
+	</body>
+</html>

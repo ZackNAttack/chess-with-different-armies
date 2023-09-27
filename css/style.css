@@ -1,0 +1,431 @@
+body {
+	background-color: #222244;
+}
+
+main{
+	background-color: #DDDDDD;
+	left: 7.5vw;
+	width: 85vw;
+	height: 55vw;
+	padding:0;
+	margin:0;
+	display: inline-block;
+	position:absolute
+}
+
+span.cell{
+	height:5vw;
+	width:5vw;
+	background-color: #F0F;
+	padding:0;
+	margin:0;
+	position:absolute;
+	user-select: none;
+}
+span.cellLight{
+	background-color: #FF6A00;
+}
+span.cellDark{
+	background-color: #7F3300;
+}
+
+span.overlay{
+	height:5vw;
+	width:5vw;
+	background-color: #FFFFFF;
+	opacity:0;
+	padding:0;
+	margin:0;
+	display: inline-block;
+	position:absolute
+}
+span.overlay.select{
+	background-color: #0000FF;
+	opacity:.5;
+}
+span.overlay.capture{
+	background-color: #FF0000;
+	opacity:.5;
+}
+span.overlay.move{
+	background-color: #00FF00;
+	opacity:.5;
+}
+span.overlay.moveblocked{
+	background-color: transparent;
+	box-shadow: 0 0 0 .625vw #00FF00 inset;
+	opacity:.5;
+}
+
+span img{
+	height:5vw;
+	width:5vw;
+	position:absolute;
+	image-rendering: pixelated;
+}
+
+#takenContainer{
+	top:45vw;
+	left:0vw;
+	padding:0;
+	display:inline-block;
+	position:absolute;
+}
+
+#gridContainer{
+	top:0vw;
+	left:0vw;
+	padding:0;
+	display:inline-block;
+	position:absolute;
+}
+
+#gridContainer2{
+	top:0vw;
+	left:45vw;
+	padding:0;
+	display:inline-block;
+	position:absolute;
+}
+
+#takenContainer2{
+	top:45vw;
+	left:45vw;
+	padding:0;
+	display:inline-block;
+	position:absolute;
+}
+
+#ticker{
+	width: 40vw;
+	font-family: Arvo, serif;
+	display: inline-block;
+	position:absolute;
+	top: 38.75vw;
+	left:0vw;
+	text-align: center;
+	font-size: 2.5vw;
+}
+
+#ticker2{
+	width: 40vw;
+	height: 5vw;
+	font-family: Arvo, serif;
+	display: inline-block;
+	position:absolute;
+	top: 38.75vw;
+	left:45vw;
+	text-align: center;
+	font-size: 2.5vw;
+}
+
+button#paundo{
+	top:45vw;
+	left:40vw;
+	width:5vw;
+	height:10vw;
+	padding:0;
+	display:inline-block;
+	position:absolute;
+}
+
+.chessCounter{
+	font-family: Orbitron, semi-serif;
+	text-align: center;
+	font-size: 2.5vw;
+}
+
+#chessCounterWhiteContainer{
+	top:0vw;
+	left:40vw;
+	width:5vw;
+	height:20vw;
+	padding:0;
+	display:inline-block;
+	position:absolute;
+	
+	background-color: #1faf1f;
+	color: white;
+}
+
+#chessCounterBlackContainer{
+	top:20vw;
+	left:40vw;
+	width:5vw;
+	height:20vw;
+	padding:0;
+	display:inline-block;
+	position:absolute;
+	
+	background-color: #1faf1f;
+}
+
+.MinutCont p{
+	top:0vw;
+	width:5vw;
+	height:5vw;
+	font-size: 2.5vw;
+	padding:0;
+	display:inline-block;
+	position:absolute;
+}
+
+.ColonCont p{
+	top:5vw;
+	width:5vw;
+	height:5vw;
+	font-size: 5vw;
+	display:inline-block;
+	position:absolute;
+    transform: translateY(-120%);
+}
+
+.SeconCont p{
+	top:10vw;
+	width:5vw;
+	height:5vw;
+	font-size: 2.5vw;
+	padding:0;
+	display:inline-block;
+	position:absolute;
+}
+
+.CeSecCont p{
+	top:15vw;
+	width:5vw;
+	height:5vw;
+	font-size: 2.5vw;
+	padding:0;
+	display:inline-block;
+	position:absolute;
+}
+
+.chessCounter{
+    position: relative;
+    top: 50%;
+    transform: translateY(-30%);
+}
+
+button#newgame{
+	top:40vw;
+	left:40vw;
+	width:5vw;
+	height:5vw;
+	padding:0;
+	display:inline-block;
+	position:absolute;
+}
+
+#setupContainer{
+	top:0vw;
+	left:0vw;
+	padding:0;
+	width:40vw;
+	height:55vw;
+	background-color: #FFFFFF;
+	display:inline-block;
+	position:absolute;
+}
+
+#pieceCollection{
+	top:0vw;
+	left:30vw;
+	padding:0;
+	width:10vw;
+	height:55vw;
+	background-color: #DDDDFF;
+	display:inline-block;
+	position:absolute;
+}
+
+#rookSection{
+	top:0vw;
+	left:0vw;
+	padding:0;
+	width:10vw;
+	height:12.5vw;
+	background-color: #DDFFFF;
+	display:inline-block;
+	position:absolute;
+}
+
+#knightSection{
+	top:12.5vw;
+	left:0vw;
+	padding:0;
+	width:10vw;
+	height:12.5vw;
+	background-color: #FFDDFF;
+	display:inline-block;
+	position:absolute;
+}
+
+#bishopSection{
+	top:25vw;
+	left:0vw;
+	padding:0;
+	width:10vw;
+	height:12.5vw;
+	background-color: #DDFFFF;
+	display:inline-block;
+	position:absolute;
+}
+
+#queenSection{
+	top:37.5vw;
+	left:0vw;
+	padding:0;
+	width:10vw;
+	height:12.5vw;
+	background-color: #FFDDFF;
+	display:inline-block;
+	position:absolute;
+}
+
+#confirmButton{
+	top:50vw;
+	left:0vw;
+	padding:0;
+	width:10vw;
+	height:5vw;
+	display:inline-block;
+	position:absolute;
+}
+
+.pieceDisplay{
+	top:0vw;
+	left:0vw;
+	padding:0;
+	width:10vw;
+	height:12.5vw;
+	background-color: #FFFFDD;
+	display:inline-block;
+	position:absolute;
+}
+
+.pieceButton{
+	top:10vw;
+	left:0vw;
+	padding:0;
+	width:10vw;
+	height:2.5vw;
+	display:inline-block;
+	position:absolute;
+}
+
+.pieceDisplay img{
+	top:0vw;
+	left:2.5vw;
+	padding:0;
+	width:5vw;
+	height:5vw;
+	background-color: #FFFFDD;
+	display:inline-block;
+	position:absolute;
+	image-rendering: pixelated;
+}
+
+.pieceDisplay p{
+	top:5vw;
+	left:0vw;
+	padding:0;
+	width:10vw;
+	height:7.5vw;
+	background-color: #FFFFDD;
+	display:inline-block;
+	position:absolute;
+	font-family: Arvo, serif;
+	font-size: 1.25vw;
+}
+
+#selectionPanel{
+	top:0vw;
+	left:0vw;
+	padding:0;
+	width:30vw;
+	height:55vw;
+	background-color: #DDDDFF;
+	display:inline-block;
+	position:absolute;
+}
+
+#selectionPanel p{
+	top:1vw;
+	left:1vw;
+	padding:0;
+	margin: 0;
+	width:30vw;
+	height:5vw;
+	display:inline-block;
+	position:absolute;
+	font-family: Arvo, serif;
+	font-size: 2.5vw;
+}
+
+#armyPanel{
+	top:5vw;
+	left:0vw;
+	padding:0;
+	width:30vw;
+	height:50vw;
+	background-color: #DDFFFF;
+	display:inline-block;
+	position:absolute;
+	overflow: auto;
+}
+
+#armyList{
+	top:0vw;
+	left:5vw;
+	padding:0;
+	width:25vw;
+	background-color: #DDFFFF;
+	display:inline-block;
+	position:absolute;
+	font-family: Arvo, serif;
+	font-size: 1.25vw;
+}
+
+#armyList li{
+	list-style: none;
+	height:1.5vw;
+}
+
+#armyList input{
+	top:0vw;
+	left:0vw;
+	width:1vw;
+	height:1vw;
+}
+
+#timerPanel {
+	top:40vw;
+	left:40vw;
+	padding:0;
+	width:45vw;
+	height:15vw;
+	background-color: #FFDDFF;
+	display:inline-block;
+	position:absolute;
+	overflow: auto;
+}
+
+#timerPanel p{
+	font-family: Arvo, serif;
+	font-size: 3vw;
+	text-align: center;
+}
+
+#timerPanel p input{
+	font-family: Arvo, serif;
+	font-size: 3vw;
+	width: 20vw;
+}
+
+#initialTime{
+	text-align: right;
+}
+
+#bonusTime{
+	text-align: left;
+}

@@ -1,0 +1,14 @@
+body {
+	background-color: #222244;
+}
+
+main {
+	background-color: #DDDDDD;
+	margin: 0 auto;
+	width: 90%;
+}
+
+h2{
+	font-size: 0.6rem;
+	font-weight: initial;
+}
